@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Markup III - Stepper</title>
+        <style> @import url("styles.css"); </style>
+    </head>
+    <body>
+        <header class="container-header">
+            <section id="header" class="text-left">
+                <h1>Markup III</h1>
+            </section>
+        </header>
+
+        <main class="flex-container-main">
+            <section id="main-section" class="flex-main-content">
+                <section id="stepperCard" class="grid-stepper-template">
+                    <section id="stepper1" class="grid-step-template">
+                        <p class="number-fill color-p-passed">1</p>
+                        <p class="color-passed">Cabin</p>
+                        <p class="stepper-line-passed color-passed"></p>
+                    </section>
+                    <section id="stepper2" class="grid-step-template">
+                        <p class="number-fill color-p-actual">1</p>
+                        <p class="color-actual">Meals</p>
+                        <p class="color-actual">-------</p>
+                    </section>
+                    <section id="stepper3" class="grid-step-template">
+                        <p class="color-actual">3</p>
+                        <p class="color-p-next">Upgrades</p>
+                        <p class="color-p-next">-------</p>
+                    </section>
+                    <section id="stepper4" class="grid-step-last-template">
+                        <p class="color-actual">4</p>
+                        <p class="color-p-next">Payment</p>
+                    </section>
+                </section>
+
+                <section id="descriptionCard">
+                    <h3 class="padding-left-md">Meal Preferences</h3>
+                    <label class="light-text padding-left-md">Your flight comes with breakfast, lunch, and dinnner. 
+                        Please make your selections below.</label>
+                    <br>
+                    <label class="light-text padding-left-md">Changes yo your order can be made up to 48 hours 
+                        before your flight.</label>
+                </section>
+
+                <section id="foodTime" class="margin-bot-md">
+                    <section id="foodTime1" class="grid-food-template light-text padding-top-xs">
+                        <section id="food1" class="grid-input-template">
+                            <label for="sectionWithArrows1"
+                                class="align-left">Breakfast</label>
+
+                            <section id="sectionWithArrows1" class="grid-arrows-template border-template">
+                                <input id="breakfastInput1" type="button" name="breakfastInput"
+                                    title="Breakfast Input" value="Sausage Egg Scramble Bowl"
+                                    class="align-left food-input-style"></input>
+                                    <label class="arrow-style">< ></label>
+                            </section>
+                        </section>
+                        <section id="drink1" class="grid-input-template">
+                            <label for="sectionWithArrows2"
+                                class="align-left">Drink</label>
+
+                            <section id="sectionWithArrows2" class="grid-arrows-template border-template">
+                                <input id="drinkInput1" type="button" name="drinkInput"
+                                    title="Drink Input" value="Coffe"
+                                    class="align-left food-input-style"></input>
+                                    <label class="arrow-style">< ></label>
+                            </section>
+                        </section>
+                    </section>
+                    
+                    <section id="foodTime2" class="grid-food-template light-text padding-top-xs">
+                        <section id="food2" class="grid-input-template">
+                            <label for="sectionWithArrows3"
+                                class="align-left">Lunch</label>
+
+                            <section id="sectionWithArrows3" class="grid-arrows-template border-template">
+                                <input id="breakfastInput2" type="button" name="breakfastInput"
+                                    title="Breakfast Input" value="Club Sandwich Meal"
+                                    class="align-left food-input-style"></input>
+                                    <label class="arrow-style">< ></label>
+                            </section>
+                        </section>
+                        <section id="drink2" class="grid-input-template">
+                            <label for="sectionWithArrows4"
+                                class="align-left">Drink</label>
+
+                            <section id="sectionWithArrows4" class="grid-arrows-template border-template">
+                                <input id="drinkInput2" type="button" name="drinkInput"
+                                    title="Drink Input" value="Cranberry Juice"
+                                    class="align-left food-input-style"></input>
+                                    <label class="arrow-style">< ></label>
+                            </section>
+                        </section>
+                    </section>
+                    
+                    <section id="foodTime3" class="grid-food-template light-text padding-top-xs">
+                        <section id="food3" class="grid-input-template">
+                            <label for="sectionWithArrows5"
+                                class="align-left">Dinner</label>
+
+                            <section id="sectionWithArrows5" class="grid-arrows-template border-template">
+                                <input id="breakfastInput3" type="button" name="breakfastInput"
+                                    title="Breakfast Input" value="Wagyu Beef Sliders Meal"
+                                    class="align-left food-input-style"></input>
+                                    <label class="arrow-style">< ></label>
+                            </section>
+                        </section>
+                        <section id="drink3" class="grid-input-template">
+                            <label for="sectionWithArrows6"
+                                class="align-left">Drink</label>
+
+                            <section id="sectionWithArrows6" class="grid-arrows-template border-template">
+                                <input id="drinkInput3" type="button" name="drinkInput"
+                                    title="Drink Input" value="Red Wine"
+                                    class="align-left food-input-style"></input>
+                                    <label class="arrow-style">< ></label>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+                
+                <section id="chBox" class="grid-chbox-template padding-top-xs">
+                    <section class="chboxDessert align-left padding-left-md">
+                        <section id="labelForDesert">
+                            <label for="dessertChbox">I'd like dessert,too!</label>
+                        </section>
+
+                        <section id="desertInput">
+                            <label><input id="dessertChbox" type="checkbox" value="accept"></label>
+                        </section>
+                    </section>
+                </section>
+                
+                <section id="Buttons" class="grid-btn-template padding-top-xs">
+                    <section id="backButtonSection" class="left-button">
+                        <input id="backButton" type="button" value="Back"
+                            class="back-button">
+                    </section>
+
+                    <section id="continueButtonSection" class="right-button">
+                        <input id="continueButton" type="button" value="Continue"
+                            class="continue-button">
+                    </section>
+                </section>
+            </section>
+        </main>
+
+        <footer class="footer-reverse">
+            <section>
+            </section>
+        </footer>
+    </body>
+</html>

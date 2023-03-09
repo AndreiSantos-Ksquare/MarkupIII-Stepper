@@ -1,0 +1,302 @@
+:root {
+    --steppColorPassed: #14c5ae;
+    --steppColorActual: #521df2;
+    --fontColor: rgb(53, 53, 53);
+    --fontLightColor: rgb(99, 99, 99);
+}
+
+html {
+    display: flex;
+    flex-flow: column;
+    background-color: #aec1d1;
+    color: var(--fontColor);
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    /* border: solid; */
+}
+
+/* body containers */
+.flex-container-main {
+    display: flex;
+    flex-flow: row nowrap;
+    height: auto;
+    width: auto;
+    padding: 15px;
+    margin: 15px;
+    color: var(--fontColor);
+    background-color: beige;
+    border-radius: 15px;
+    border-color: #000000;
+    box-shadow: 10px 5px 5px rgb(81, 81, 81);;
+}
+
+.flex-main-content {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    padding: 15px;
+    margin: 15px;
+    color: var(--fontColor);
+    border-color: #000000;
+}
+
+.container-header {
+    height: auto;
+    color: black;
+    font-size: 20px;
+    width: 90%;
+    padding: 15px;
+    margin: 15px;
+}
+
+.footer-class {
+    width: 100%;
+    background: beige;
+    position: absolute;
+    left: 0;
+    text-align: center;
+}
+
+/* grid templates */
+.grid-stepper-template {
+    background-color:beige;
+    place-items: center;
+    align-items: center;
+    display: grid;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    grid-template-columns: 28% 28% 28% 16%;
+    grid-template-rows: 100%;
+}
+
+.grid-step-template {
+    background-color:beige;
+    place-items: center;
+    align-items: center;
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: 100%;
+}
+
+.grid-step-last-template {
+    background-color:beige;
+    place-items: center;
+    align-items: center;
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 100%;
+}
+
+.grid-food-template {
+    background-color:beige;
+    place-items: center;
+    align-items: center;
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 100%;
+}
+
+.grid-arrows-template {
+    background-color:beige;
+    place-items: center;
+    align-items: center;
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 100%;
+}
+
+.grid-input-template {
+    background-color:beige;
+    place-items: center;
+    align-items: center;
+    display: grid;
+    width: 95%;
+    height: auto;
+    grid-template-columns: 100%;
+    grid-template-rows: 50%;
+}
+
+.grid-chbox-template {
+    background-color:beige;
+    place-items: center;
+    align-items: center;
+    display: grid;
+    width: 95%;
+    height: auto;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+}
+
+.grid-btn-template {
+    background-color:beige;
+    place-items: center;
+    align-items: center;
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
+
+/* content styles */
+
+.number-fill {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.color-p-passed {
+    font-weight: bold;
+    color: white;
+    background-color: var(--steppColorPassed);
+}
+
+.color-passed {
+    font-weight: bold;
+    color: var(--steppColorPassed);
+}
+
+.color-p-actual {
+    font-weight: bold;
+    color: white;
+    background-color: var(--steppColorActual);
+}
+
+.color-actual {
+    font-weight: bold;
+    color: var(--steppColorActual);
+}
+
+.color-p-next {
+    color: var(--fontColor);
+}
+
+.color-next {
+    font-weight: bold;
+    color: var(--steppColorActual);
+}
+
+.stepper-line-passed {
+    display: flex;
+    width: 60%;
+    height: 0;
+    border: solid;
+}
+
+.stepper-line-actual {
+    display: flex;
+    width: 60%;
+    height: 0;
+}
+
+.passed {
+    border-color: var(--steppColorPassed);
+    background-color: var(--steppColorPassed);
+}
+
+.actual {
+    border-color: var(--steppColorActual);
+    background-color: var(--steppColorActual);
+}
+
+.light-text {
+    color: var(--fontLightColor);
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.arrow-style {
+    padding-right: 8px;
+    justify-self: self-end;
+    cursor: pointer;
+    writing-mode: vertical-lr;
+    display: flex;
+}
+
+.align-left {
+    justify-self: baseline;
+}
+
+.padding-xs {
+    padding: 8px;
+}
+
+.padding-left-md {
+    padding-left: 16px;
+}
+
+.padding-top-xs {
+    padding-top: 16px;
+}
+
+.margin-bot-md {
+    margin-bottom: 16px;
+}
+
+.food-input-style {
+    display: flex;
+    width: 100%;
+    height: 36px;
+    background-color: beige;
+    border: 0;
+    border-radius: 8px;
+}
+
+.border-template {
+    border: solid;
+    border-radius: 8px;
+}
+
+.chboxDessert {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.back-button {
+    background-color: beige;
+    width: 96px;
+    height: 32px;
+    color: black;
+    border-color: var(--fontLightColor);
+    border-radius: 8px;
+}
+
+.continue-button {
+    width: 96px;
+    height: 32px;
+    color: white;
+    border-color: var(--steppColorActual);
+    background-color: var(--steppColorActual);
+    border-radius: 8px;
+}
+
+.left-button {
+    padding-left: 16px;
+    justify-self: left;
+}
+
+.right-button {
+    padding-right: 8px;
+    justify-self: right;
+}
